@@ -1,32 +1,52 @@
 * {
     margin: 0;
+    font-size: 15px;
 }
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     background-image: linear-gradient(#3AD4C8, #767AE6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-header, footer {
-    width: 95%;
-    height: 10%;
-    background-color: white;
-    border-radius: 20px;
+    justify-content: space-evenly;
 }
 
 header {
+    width: 95%;
+    height: 10%;
+    background-color: white;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.divisor {
+    background-color: inherit;
+    border: none;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    height: 50%;
 }
 
 #qtd-input {
-    width: 70px;
+    width: 10%;
+    color: black;
+}
+
+#qtd-input::placeholder {
+    font-style: italic;
+    color: black;
+}
+
+#unid-input{
+    background-color: inherit;
+}
+
+#product-input {
+    width: 25%;
 }
 
 #product-input::placeholder {
@@ -36,19 +56,47 @@ header {
 #add {
     width: 50px;
     height: 50px;
-    color: #767AE6;
+    color: white;
     border-radius: 50%;
-    background-color: #3AD4C8;
+    background-color: #767AE6;
     display: grid;
     place-items: center;
 }
 
 #add:hover {
-    background-color: #20A69B;
+    background-color: #3AD4C8;
 }
 
 main {
-    width: 80%;
-    height: 80%;
-    background-color: blue;
+    width: 85%;
+    height: 75%;
+    background-color: white;
+    opacity: .5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.line {
+    width: 85%;
+    height: 7%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.item {
+    background-color: #3AD4C8;
+}
+
+#total {
+    background-color: #767AE6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-b{
+    color: black;
 }
