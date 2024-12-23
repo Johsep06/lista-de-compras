@@ -8,25 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <input type="number" class="divisor" id="qtd-input" placeholder="0">
-        <select name="unidade" class="divisor" id="unid-input">
-            <option value="1" selected>Unid.</option>
-            <option value="2">Kg</option>
-        </select>
-        <input type="text" class="divisor" id="product-input" placeholder="Produto">
-        <div id="add">
-            <strong> + </strong>
-        </div>
+    <header class="backgound">
+        <form>
+            <strong>QTD:</strong>
+            <input type="number" name="qtd" class="input-box" id="qtd">
+            <strong>Nome:</strong>
+            <input type="text" name="nome" class="input-box" id="name">
+            <input type="button" id="add" onclick="appendLine()" value="add">
+        </form>
     </header>
-    <main>
-        <div class="line item"></div>
-        <div class="line" id="total">
-            <strong>
-                <span class="text-b"> Valor Total: R$</span>
-                <span class="text-b" id="valor-total">00.00</span>
-            </strong>
-        </div>
+    <main class="backgound" id="list">
     </main>
     <script src="script.js"></script>
 </body>
